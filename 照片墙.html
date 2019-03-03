@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>照片墙</title>
+	<style>
+		body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+		.wall{
+			width: 1000px;
+			height: 300px;
+			border: 1px solid #000;
+			margin: 60px 300px;
+			position: relative;
+			box-shadow: 10px 10px 10px ;
+		}
+		div{
+			
+			margin-left: 100px;
+			height: 150px;
+			width: 150px;
+			position: absolute;
+			
+/*			水平排版可以修改块级元素为行内块级元素，可以变为浮动排版*/
+		}
+		img{
+			height: 250px;
+			width: 250px;
+			border: 4px solid #ccc;
+			position: relative;
+		}
+		.box1 img{
+			transform: rotate(30deg) scale(0.7);
+		}
+		.box2 img{
+			transform: rotate(-20deg) scale(0.7);
+			margin-left: 200px;
+		}
+		.box3 img{
+			transform: rotate(45deg) scale(0.7);
+			margin-left: 400px;
+		}
+		.box4 img{
+			transform: rotate(60deg) scale(0.7);
+			margin-left: 600px;
+		}
+		.box1:hover img{
+			transform: none;
+			transition: all 1s ;
+			z-index: 555;
+		}.box2:hover img{
+			transform: none;
+			transition: transform 1s;
+			z-index: 555;
+		}.box3:hover img{
+			transform: none;
+			transition: transform 1s;
+			z-index: 555;
+		}.box4:hover img{
+			transform: none;
+			transition: transform 1s;
+			z-index: 555;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wall">
+	<div class="box1"><img src="images/juren1.jpg" alt=""></div>
+	<div class="box2"><img src="images/juren2.jpg" alt=""></div>
+	<div class="box3"><img src="images/juren3.jpg" alt=""></div>
+	<div class="box4"><img src="images/juren4.jpg" alt=""></div>
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页布局方式</title>
+	<style>
+		.box1{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			display: inline-block;
+			float: left;
+		}
+		
+		.box2{
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+			display: inline-block;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+<!--浮动流排版方式：
+浮动流就是一种半脱离标准流的排版方式
+浮动流只有水平对齐，在浮动中不可以使用margin：0 auto的
+特点：在浮动流中不区分行内元素和行内块级元素的
+在浮动流中无论是什么元素都可以设置宽高，浮动流中的元素和标准流中的行内块级元素很像
+-->
+	<div class="box1"></div>
+	
+	<div class="box2"></div>
+</body>
+</html>

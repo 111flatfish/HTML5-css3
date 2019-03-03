@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>清除浮动方式3</title>
+	<style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		.a{
+			background-color: red;
+			
+		}
+		p{
+			height: 20px;
+			float: left;
+		}
+		.b{
+			background-color: blue;
+			
+		}
+		.box{
+			clear: both;
+			height: 20px;
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+<!--隔墙法
+1.外墙法
+在两个盒子中间添加一个额外的块级元素，再给这个额外盒子设置clear属性
+外墙法课可以让第二个盒子使用margin-top属性，但不可以让第一个盒子设置margin-bottom属性,所以解决的方法是在额外添加的盒子里面添加高度属性
+2.内墙法
+在第一个盒子中所有元素最后添加一个额外的块级元素，再给这个额外盒子设置clear属性
+内墙法课可以让第二个盒子使用margin-top属性，也可以让第一个盒子设置margin-bottom属性
+
+
+-->
+	<div class="a">
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+	</div>
+	<div class="box">
+	</div>
+	<div class="b">
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+	</div>
+</body>
+</html>

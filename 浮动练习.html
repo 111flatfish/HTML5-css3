@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>浮动元素练习</title>
+	<style>
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}
+		.header{
+			height: 100px;
+			width: 980px;
+			
+		}
+		.content{
+			width: 980px;
+			height: 400px;
+			
+			margin-top:10px;
+		}
+		.header>.hb1{
+			width: 250px;
+			height: 100px;
+			background-color:#111;	
+			float: left;
+		}
+		.header .hb2{
+			width: 150px;
+			height: 50px;
+			background-color: #333333;
+			float: right;
+		}
+		.header .hb3{
+			width: 650px;
+			height: 50px;
+			background-color: #999;
+			float: right;
+		}
+		.cb1{
+			width: 320px;
+			height: 400px;
+			background-color: #112233;
+			float: left;
+		}
+		.cb2{
+			width: 240px;
+			height: 350px;
+			background-color: #456;
+			float: right;
+		}.cb3{
+			width: 400px;
+			height: 200px;
+			background-color: #789;
+			float: right;
+			margin-right: 10px;
+		}.cb4{
+			width: 400px;
+			height: 140px;
+			background-color: #7ED31C;
+			float: right;
+			margin-top: 10px;
+			margin-right: 10px;
+		}.cb5{
+			width: 650px;
+			height: 40px;
+			background-color: #B9860F;
+			float:right;
+			margin-top: 10px;
+		}
+		.footer{
+			width: 980px;
+			height: 40px;
+			background-color: green;
+			margin-top: 10px;
+		}
+		p{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+		}
+		.test{
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+
+<body>
+<!--浮动高度问题
+在标准流中内容的高度可以撑起父元素的高度
+但是浮动元素是不可以撑起父元素的高度的
+-->
+	<div class="header">
+		<div class="hb1"></div>
+		<div class="hb2"></div>
+		<div class="hb3"></div>
+</div>
+	<div class="content">
+	<div class="cb1"></div>
+	<div class="cb2"></div>
+	<div class="cb3"></div>
+	<div class="cb4"></div>
+	<div class="cb5"></div>
+	</div>
+	<div class="footer"></div>
+	<hr>
+	<div class="test">
+		<p></p>
+	</div>
+</body>
+	
+</html>

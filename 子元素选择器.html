@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>子元素选择器</title>
+	<style>
+		div>p{color: red;}
+		div>ul>li>p{color:green;}
+	</style>
+</head>
+
+<body>
+<!--子元素选择器只会查找直接后代即儿子元素，不会查找其他后代，子元素只能用>来链接,也可以用多个>符号 一直延续下去-->
+<!--后代选择器和子元素选择器都可以用各自的符号一直延续下去-->
+</body>
+	<div>
+		<p>我是段落</p>
+		<p>我是段落</p>
+		<ul>
+			<li>
+				<p>我是段落</p>
+			</li>
+		</ul>
+	</div>
+</html>

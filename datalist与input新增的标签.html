@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<!--每5秒刷新一次-->
+<meta charset="utf-8" http-equiv="refresh" content="10">
+	
+<title>表单datalist</title>
+</head>
+
+<body>
+	<form>
+		车号：<input type="text" list="cars">
+		<datalist id="cars">
+			<option>宝马</option>
+			<option>奔驰</option>
+			<option>路虎</option>
+			<option>奥迪</option>
+		</datalist>
+<!--		规定邮箱格式，地址格式，限制数字输入，选择日历时间，提供颜色板-->
+		邮箱：<input type="email">
+		地址：<input type="url">
+		号码：<input type="number">
+		时间：<input type="date">
+		颜色：<input type="color">
+	</form>
+</body>
+</html>

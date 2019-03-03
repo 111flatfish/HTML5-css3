@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>属性选择器</title>
+	<style>
+		p[id]{
+			color: red;
+			
+		}
+		p[class = "cc"]{
+			color: blue;
+		}
+		img[alt ^= ab]{
+			
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+<!--
+1.什么是属性选择器
+作用：根据指定属性名称找到对应的标签，然后设置属性
+标签1[attribute]
+
+标签1[attribute = value]
+作用：根据属性的取值等于value的标签，然后设置属性，最常见应用于input标签中
+
+2.
+属性以什么开头的
+[attribute^= value]
+
+属性是以什么结尾的
+[attribute$= value]
+
+属性是取某一特定值得
+[attribute*= value]
+
+-->
+	<p id="id1">我是段落1</p>
+	<p id="id2" class="cc">我是段落2</p>
+	<p class="cc">我是段落3</p>
+	<p>我是段落4</p>
+	<p id="id5" class="prpr">我是段落5</p>
+	<img src="" alt="abdef">
+	<img src="" alt="ab-def">
+	<img src="" alt="ab-www">
+	<img src="" alt="www-ab">
+	<img src="" alt="aa">
+	<img src="" alt="qq">
+	<img src="" alt="yy">
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>浮动元素贴靠现象</title>
+	<style>
+		.box1{
+			width: 300px;
+			height: 500px;
+			border: 1px solid #000;
+		}
+		.box2{
+			float: left;
+			width: 100px;
+			height: 400px;
+			background-color: red;
+		}
+		.box3{
+			float: left;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+		.box4{
+			float: left;
+			width: 300px;
+			height: 100px;
+			background-color: blue;
+		}
+	</style>
+</head>
+
+<body>
+<!--
+如果一个元素的长度超出了盒子的范围，则会找与之贴靠的元素的上一个元素并贴在上面，如果上一个标签依然不够则继续找上一个知道找到父元素为止
+-->
+</body>
+	<div class="box1">
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	</div>
+	
+</html>

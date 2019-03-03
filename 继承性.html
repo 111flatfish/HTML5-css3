@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css继承性</title>
+	<style>
+		div{
+			color: red;
+			font-size: 30px;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body> 
+<!--作用：
+		给父元素设置一些属性，子元素也可以使用
+		1.只有color/font-/text-/line开头的属性开头的属性可以使用
+		2.在CSS的继承中不仅仅是儿子可以继承，后代都可以继承
+		3.CSS继承性中的特殊性
+	3.1 a标签的颜色和下划线是不可以继承的
+	3.2 h标签文字大小也不可以继承
+-->
+	<div>
+		<p>我是段落</p>
+	</div>
+	<div>
+		<ul>
+			<li>
+				<p>我是段落</p>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a href="#">我是超链接</a>
+	</div>
+	<div>
+		<h1>我是标题</h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>清除浮动方式4</title>
+	<style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		.a{
+			background-color: red;
+			
+		}
+		p{
+			height: 20px;
+			float: left;
+		}
+		.b{
+			background-color: blue;
+			
+		}
+		.a::after{
+/*			设置内容为空*/
+			content: '';
+/*			设置高度为0*/
+			height: 0;
+/*			设置内容不可见*/
+			visibility: idden;
+/*			设置子元素*/
+			clear: both;
+/*			设置为块级元素*/
+			display: block;
+		}
+		.a{
+/*			兼容ie6浏览器*/
+			*zoom:1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="a">
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+	</div>
+
+	<div class="b">
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+	</div>
+</body>
+</html>

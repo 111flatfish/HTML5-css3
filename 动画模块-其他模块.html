@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>动画模块-其他模块</title>
+	<style>
+*{
+		padding:0;
+		margin:0;
+	
+	}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color:red;
+/*			动画名称*/
+			animation-name: inj;
+/*			动画播放的的时间*/
+			animation-duration: 3s;
+/*			动画播放次数*/
+			animation-iteration-count: 2;
+/*			动画延迟*/
+			animation-delay: 1s;
+/*			动画速率*/
+			animation-timing-function: linear;
+/*			动画往返*/
+			animation-direction: alternate;
+			
+		}
+		@keyframes inj{
+/*			动画相应属性的变化*/
+			from{
+				margin-left: 0;
+			}
+			to{
+				margin-left: 500px;
+			}
+		}
+</style>
+</head>
+
+<body>
+	<div class="box"></div>
+	
+</body>
+</html>

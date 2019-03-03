@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>扑克牌</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.box{
+			width: 300px;
+			height: 400px;
+			border: 1px solid #000;
+			margin: 30px auto;
+			perspective: 300px;
+			
+		}
+		.box:hover img{
+			transform: rotateX(60deg);
+			transform-origin: center bottom;
+			transition: transform 1s;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box"><img src="images/puke.jpg" alt="" width="300px" height="400px"></div>
+</body>
+</html>

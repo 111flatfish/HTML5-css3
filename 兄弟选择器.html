@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>相邻兄弟选择器</title>
+	<style>
+		h1+p{color: red;}
+		.aaa~p{color:green;}
+	</style>
+</head>
+
+<body>
+<!--相邻兄弟选择器：必须要用+链接
+	而且是设置紧跟在该标签后的标签的属性,必须是紧跟其后的第一个标签
+	通用兄弟选择器：用~连接
+	给所有该标签后的所有指定的标签设置属性，与位置无关
+-->
+	<h1>我是标题</h1>
+	<p>我是段落</p>
+	<p>我是段落</p>
+	<p>我是段落</p>
+	<h1 class="aaa">我是标题</h1>
+	<p>我是段落</p>
+	<p>我是段落</p>
+	<p>我是段落</p>
+</body>
+	
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>清除浮动方式2</title>
+		<style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		.a{
+			background-color: red;
+			
+		}
+		p{
+			height: 20px;
+			float: left;
+		}
+		.b{
+			background-color: blue;
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+<!--清除浮动的第二种方式
+给后面的盒子添加clear属性
+
+clear：默认是none，即按照浮动的规则分布
+both是不找前面的左浮动和右浮动元素
+left不找左浮动
+right不找右浮动
+但clear不能与margin连用
+-->
+	<div class="a">
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+	</div>
+	<div class="b">
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+	</div>
+</body>
+</html>

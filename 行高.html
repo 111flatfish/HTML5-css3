@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>行高和字号</title>
+	<style>
+		*{
+			padding:0;
+			margin: 0;
+		}
+		.box{
+			
+			box-sizing: border-box;
+			color:#8B858E;
+			width: 610px;
+			font-size: 20px;
+			font-family: "黑体";
+			line-height: 40px;
+			
+			border: 1px solid #000;
+			padding-top: 10px;
+			
+			padding-left: 10px;
+			padding-right: 10px;
+			
+			
+			background-color: #CCCCCC ;
+		}
+	</style>
+</head>
+
+<body>
+<!--行高：CSS中所有字体都有行高
+规律：文字行高默认是垂直居中的
+行高和盒子高度设置一样可以保证文字在盒子高度中是居中的。
+多行文字只能用padding来设置垂直居中
+盒子中存储的是文字一般是以左边的内边距为基准，右边会有误差
+顶部的内边距并不是边框到顶部的距离而是顶部到行高的距离
+-->
+	<div class="box">葬爱：非主流文化的常用词，是当今网络流行术语，且流行于非主流杀马特之中。葬，即埋葬，爱，即爱情，翻译成外语就bury love
+	</div>
+</body>
+</html>

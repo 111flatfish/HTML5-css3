@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS元素显示模式</title>
+	<style>
+		div{
+			display: inline;
+			background: red;
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+<!--
+CSS分为块级元素和行内元素
+
+块级元素会独占一行，容器级的标签
+行内元素不会独占一行，除p外的标签
+
+块级元素和默认的父元素宽高一样
+行内元素不能设置宽高，和默认内容一样宽
+
+行内块级元素：为了能够让元素既能够不独占一行有能设置宽高
+
+显示模式转换：display属性:inline行内，block块级，inline-block行内块级
+
+-->
+	<div>我是div</div>
+	<p>我是段落<p>
+	<ul>我是列表</ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绝对定位的参考点</title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+			
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			
+		}
+		.box1{
+			width: 300px;
+			height: 300px;
+			background-color:red;
+			position: fixed;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			position: relative;
+		}
+		.box3{
+			background-color: blue;
+			position: absolute;
+			bottom:0;
+			
+		}
+	</style>
+</head>
+
+<body>
+<!--绝对定位的参考点
+1.在默认情况下，绝对定位的元素是根据body定位的。
+2.当绝对定位的祖先元素有定位流的时候，包括相对定位，绝对定位，固定定位，那么该元素就会相对于祖先元素定位,静态定位的祖先元素不行
+3.当绝对定位的元素的多个祖先有定位属性的时候，那么该元素会根据最近的父元素定位
+-->
+	<div class="box1">
+	<div class="box2">
+		<div class="box3"></div></div>
+	</div>
+	
+</body>
+</html>

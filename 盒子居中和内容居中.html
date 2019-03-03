@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>盒子居中和内容居中</title>
+	<style>
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+		.father{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			text-align: center;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+<!--两个盒子如果是嵌套关系的，如果设置里面的盒子的垂直方向上的margin，那么外面的盒子会被定下来，解决方法是设置外盒子的border属性-->
+<!--text-align:center和margin：0 auto的区别
+text-align:center是让文字和图片居中，一个是让盒子居中
+-->
+</body>
+	<div class="father">我是文字
+	<div class="box"></div>
+	</div>
+	
+</html>

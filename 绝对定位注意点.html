@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绝对定位注意点</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			
+			
+		}
+/*
+		.box1{
+			background-color:red;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		.box2{
+			width: 2000px;
+			height: 100px;
+			background-color:green;
+		}
+		.box3{
+			height: 2000px;
+			width: 100px;
+			background-color:blue;
+		}		
+*/
+		.box4{
+			height: 300px;
+			width: 300px;
+			background-color: red;
+			border: 20px solid #000;
+			padding:30px;
+		}
+		.box5{
+			height: 100px;
+			width: 100px;
+			background-color:blue;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	</style>
+</head>
+
+<body>
+<!--
+1.绝对定位的元素会根据首屏的大小进行定位，而不是根据整个网页的大小来进行定位
+2.当父元素中有padding和边框属性的时候，绝对定位的元素忽略掉父元素的边框和padding
+-->
+<!--
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+-->
+	<div class="box4">
+		<div class="box5"></div>
+	</div>
+	
+</body>
+</html>

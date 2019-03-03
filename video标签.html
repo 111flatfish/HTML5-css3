@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>video标签</title>
+</head>
+
+<body>
+	<!--播放视屏标签:
+		controls：控制条标签
+		poster:默认的图片
+		loop：循环播放
+		preload:预加载，即缓存
+		muted:静音格式
+
+-->
+	<video src="video/aplane.webm" controls = "controls" poster="cat.jpg" loop = "loop" muted = "muted" preload="auto" height="500px" >
+	</video>
+	
+<!--	video一共支持三种格式，ogg，wedm,npeg4
+		用source指定视频的格式，给浏览器指定不同的视频格式，
+		以解决浏览器的适配问题
+-->
+	<video autoplay = "autoplay">
+		<source src="video/aplane.webm" type="video/webm">
+	</video>
+	
+</body>
+</html>

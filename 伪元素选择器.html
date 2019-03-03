@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>伪元素选择器</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		div::before{
+			content: "爱护";
+			background-color: blue;
+		
+			display: block;
+/*			设置内容不可见*/
+			visibility: hidden;
+			
+		}
+		div::after{
+			content: "剑帝";
+			background-color:green;
+			display: block;
+		}
+		
+	</style>
+</head>
+
+<body>
+<!--伪元素选择器
+给指定标签内容的前面添加一个子元素或者给你指定标签后面添加一个子元素
+
+-->
+	<div>
+	我是文字
+	</div>
+</body>
+</html>

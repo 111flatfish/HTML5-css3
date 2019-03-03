@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>子绝父相</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		ul{
+			width: 800px;
+			height: 50px;
+			background-color: #ccc;
+			margin: 0 auto;
+			margin-top: 50px;
+			
+		}
+		ul li{
+			width: 100px;
+			line-height: 50px;
+			float: left;
+			text-align: center;
+		}
+		ul li:nth-last-of-type(5){
+			background-color: yellow;
+			position: relative;
+			
+		}
+		ul li img{
+			width: 50px;
+			position: absolute;
+			left: 50%;
+			margin-left:-25px;
+			top:-6px;
+		}
+	</style>
+</head>
+
+<body>
+<!--子绝父相
+1、子元素用绝对定位，父元素用相对定位，那么子元素就不会随着网页大小变化而变化，而且不占用空间
+2、绝对定位元素的水平居中：设置left属性为50%，再设置margin-left属性为该元素长度的负的一半
+
+-->
+	<ul>
+		<li>剑帝</li>
+		<li>剑皇</li>
+		<li>暗帝</li>
+		<li>剑魔
+			<img src="images/hot.png" alt="">
+		</li>
+		<li>弹药</li>
+		<li>漫游</li>
+		<li>红眼</li>
+		<li>神思者</li>
+	</ul>
+</body>
+</html>

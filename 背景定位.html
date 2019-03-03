@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>beijin</title>
+	<style>
+		div{
+			width: 500px;
+			height: 500px;
+			
+			
+		}
+		.box1{
+			background-image: url(images/baidu.jpg);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
+		.box2{
+		
+		}
+		.box{
+/*			可以是本地文件，也可以是链接*/
+			background-image: url(images/baidu.jpg);
+			background-color:red;
+/*			可以是no-repeat不重复，repeat重复，repeat-x水平平铺，repeat-y垂直平铺 */
+			background-repeat: no-repeat;
+			
+/*			两个值，前一个是水平方向的值，后一个是垂直方向的值可以是数值，也可以是方位值，可以用于定位背景图片在整个网页的位置，比如可以保证背景图显示设置的方位*/
+			background-position: center center;
+/*			background: red url(images/baidu.jpg) no-repeat center center; 简写方式
+			background:背景颜色 背景图片 平铺方式 关联方式 背景方位
+			*/
+/*	背景关联方式：默认情况下背景图片会随着滚动条的滚动而滚动，可以修改关联方式来设置背景图片和滚动条的关联方式的
+			background-attachment:
+			scroll
+			
+			*/
+			background-attachment:fixed;
+		}
+	</style>
+</head>
+
+<body>
+<!--背景图片和颜色可以共存，并且图片覆盖背景色-->
+<!--
+	背景图片仅仅是一个装饰，不会占用空间
+	而img会占用空间
+	背景图片有定位属性，方便控制图片位置
+	而插入图片的位置控制不方便
+-->
+<div class="box">
+	
+	</div>
+	<div class="box1">我是文字</div>
+	<div class="box2">
+	<img src="images/baidu.jpg" alt="无图片">
+		我是文字
+	
+	</div>
+	<div class="box3"></div>
+</body>
+</html>

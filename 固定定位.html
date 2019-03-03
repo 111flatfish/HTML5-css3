@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>固定定位</title>
+	<style>
+		*{
+			
+			margin: 0;
+			padding:0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			
+		}
+		.box1{
+			background-color: red;
+		}
+		.box2{
+			background-color: green;
+			position: fixed;
+			left: 200px;
+		}
+		.box3{
+			background-color: blue;
+		}
+		.box4{
+			background-color: yellow;
+			height: 2000px;
+			background: url(images/hot.png) no-repeat fixed 20px 40px;
+		}
+	</style>
+</head>
+	
+
+<body>
+<!--	
+固定定位：设置了固定定位的标签不会随着滚轮的滚动而滚动，即该标签会固定在屏幕的相应位置，与背景图片的关联方式差不多
+1、固定定位于绝对定位类似，都是脱离标准流的，而且不区分块级元素，行内元素，行内块级元素
+-->
+</body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>非input标签</title>
+</head>
+
+<body>
+<!--	select下拉列表：selected默认选项
+						opgroup分组标签
+						textarea多行输入框
+-->
+	<select>
+		<opgroup>
+			<option>北京</option>
+			<option selected = "selected">上海</option>
+		</opgroup>
+	</select>
+	<textarea cols="30" rows="10"></textarea>
+	<hr>
+	<form action="http://www.baidu.com">
+		<fileset>
+			<legend>注册界面</legend>
+		<p>
+<!--			autofocus属性用于浏览器打开时自动聚焦在该输入框-->
+			账号：<input type="text" name="abc" autofocus = "autofocus" pattern="[0-9]" title="请输入数字账号！">
+		</p>
+		<p>
+			密码：<input type="password" name="123">
+		</p>
+		<p>
+			性别：
+			<input type="radio" name="a" value="man">男
+			<input type="radio" name="a" value="women">女
+			<input type="radio"  name="a" checked = "checked">保密
+		</p>
+		<p>爱好：
+			<input type="checkbox" name = "sport" value="bas">篮球
+			<input type="checkbox"  name = "sport" value="foot">足球
+			<input type="checkbox"   name = "sport"  value="sha" checked = "checked">足浴
+		</p>
+		<p>
+			简介：<input type="textarea"  name = "desc" >
+		
+		</p>
+		<p>
+			生日：<input type="date" name="birthday">
+		
+		</p>
+		<p>
+			邮箱：<input type="email" name="email">
+		</p>
+		<p>
+			电话：<input type="number" name="phone">
+		</p>
+		<p>
+			<input type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="reset" value="清空">
+		</p>
+			</fileset>
+	</form>
+</body>
+</html>

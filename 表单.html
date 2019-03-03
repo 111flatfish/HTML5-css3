@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单input</title>
+</head>
+
+<body>
+<!--			form:action指定数据提交的服务器，name指定提				 交数据的名称，value指定提交数据的值
+				input的type属性：
+				text:明文输入框，value是默认值
+				password:暗文输入框
+				radio:单选框,name属性要使选项之间互斥，name值必输相同，cheaked属性是默认的选项，只能是一个
+				checkbox:复选框，checked属性是可以多个
+				botton:按钮：交互作用
+				image:图片按钮
+				reset:重置按钮：清空数据
+				submit:提交按钮：给form指定的服务器提交input的数据，name属性提交名称，value指定相应的值，只有填写了name属性的type才可以提交
+				label:用与聚焦所选框，即指定要填写的文本框。for指定文本框的id号。
+-->
+	<form action="http://www.baidu.com">
+	<label for="aaa">账号：</label><input type="text" name="aa" id="aaa" ><br>
+	<label for="bbb">密码：</label><input type="password" name="bb" id="bbb"><br>
+	<input type="radio" checked = "checked" name="test"><input type="radio" name="test"><input type="radio" name="test"><br>
+	<input type="checkbox"><br>
+	<input type="button" value="按钮" onClick="abc"><br>
+	<input type="image" src="cat.jpg" onClick="abv"><br>
+	<input type="reset">
+	<input type="text">
+	<input type="submit">
+		
+	</form>
+	
+</body>
+</html>

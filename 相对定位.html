@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>定位流</title>
+	<style>
+		div{
+			height: 100px;
+			width: 100px;
+		}
+		.box1{
+			background-color: red;
+		}
+		.box2{
+			background-color: green;
+			margin-top:30px;
+			position: relative;
+			top:20px;
+			left:20px;
+		}
+		.box3{
+			background-color: blue;
+		}
+		span{
+			background-color: red;
+			width: 30px;
+			height: 30px;
+			position: relative;
+			left:30px;
+			top:30px;
+			
+		}
+	</style>
+</head>
+
+<body>
+<!--相对定位
+1.相对定位就是相对于标签之前在标准流中的位置
+2.相对定位于left right top bottom 连用 而且水平垂直方向只能设置一个属性
+3.相对定位是不会脱离标准流的，在设置后仍然在标准流中占有一份空间
+4.相对定位中是区分块级元素，行内元素，行内块级元素的
+5.由于相对定位是不脱离标准流的所以并且相对定位的元素会占用标准流的空间，所以在给相对定位的元素设置margin、padding属性的时候回影响到标准流的布局
+6.应用场景：1.用于对元素的位置的微调，比如两个元素不对齐可以用相对定位调整位置
+			2.配合相对定位使用
+-->
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<span>我是文字</span>
+</body>
+</html>

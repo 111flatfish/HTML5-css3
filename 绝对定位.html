@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绝对定位</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			
+		}
+		.box1{
+			background-color:red;
+		}
+		.box2{
+			background-color:green;
+			position: absolute;
+			top:200px;
+			right:200px;
+		}
+		.box3{
+			background-color:blue;
+		}
+		span{
+/*			行内元素*/
+			background-color: yellow;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+<!--绝对定位：
+1.绝对定位是脱离标准流的，与浮动流相似
+2.绝对定位的标签是不区分块级元素、行内元素，行内块级元素的
+3.绝对定位是相对于body进行定位的，并且都是与left，right ，top，bottom连用的
+-->
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<span>我是span</span>
+</body>
+</html>

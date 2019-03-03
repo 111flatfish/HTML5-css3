@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>清除浮动方式</title>
+	<style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		.a{
+			background-color: red;
+			height: 20px;
+		}
+		p{
+			height: 20px;
+			float: left;
+		}
+		.b{
+			background-color: blue;
+		}
+	</style>
+</head>
+
+<body>
+<!--浮动元素内容不会撑起父元素的高度
+但设置父元素高度后可以清除浮动方式,但不推荐
+-->
+	<div class="a">
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+		<p>我是文字1</p>
+	</div>
+	<div class="b">
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+		<p>我是文字2</p>
+	</div>
+</body>
+</html>
