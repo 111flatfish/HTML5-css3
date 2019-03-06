@@ -5,7 +5,10 @@
 <title>子元素选择器</title>
 	<style>
 		div>p{color: red;}
-		div>ul>li>p{color:green;}
+/*		div>ul>li>p{color:green;}*/
+		.a>ul>li>p{
+			color: blue;
+		}
 	</style>
 </head>
 
@@ -19,6 +22,22 @@
 		<ul>
 			<li>
 				<p>我是段落</p>
+			</li>
+		</ul>
+	</div>
+	<div class="a">我是div
+		<ul>
+			<li>
+				<p>我是直接后代</p>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<ul>
+					<li>
+						<p>我是间接后代</p>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</div>
