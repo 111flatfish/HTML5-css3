@@ -11,6 +11,11 @@
 			padding-top: 20px;
 			padding:20px 30px 40px 50px;
 		}
+		.span{
+			border: 1px solid #000;
+/*			百分比是相对于父元素进行计算的*/
+			padding: 1%;
+		}
 	</style>
 </head>
 
@@ -19,9 +24,10 @@
 内边距也有背景颜色
 格式：padding:上 右 下 左
 padding-top...
-给标签设置内边距后，原来的宽高会发生变化
+给标签设置内边距后，原来的宽高会发生变化，可以通过设置box-sizing:border-box来解决;
 -->
 </body>
 	<div class="box">我是文字</div>
+	<span class="span">我是span</span>
 </html>
 2
