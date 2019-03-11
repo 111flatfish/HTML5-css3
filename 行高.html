@@ -26,11 +26,33 @@
 			
 			background-color: #CCCCCC ;
 		}
+		.a{
+			background-color: #cccccc;
+			text-align: center;
+			width: 200px;
+			height: 100px;
+			line-height: 100px;
+			float: left;
+		}
+		.b{
+			background-color: #cccccc;
+			text-align: center;
+			width: 200px;
+			height: 100px;
+			
+			float: left;
+		}
+		.b p{
+			font-size: 12px;
+			box-sizing: border-box;
+			padding-top: 38px;
+		}
 	</style>
 </head>
 
 <body>
 <!--行高：CSS中所有字体都有行高
+行高是文字上下距离加起来的总和
 规律：文字行高默认是垂直居中的
 行高和盒子高度设置一样可以保证文字在盒子高度中是居中的。
 多行文字只能用padding来设置垂直居中
@@ -38,6 +60,13 @@
 顶部的内边距并不是边框到顶部的距离而是顶部到行高的距离
 -->
 	<div class="box">葬爱：非主流文化的常用词，是当今网络流行术语，且流行于非主流杀马特之中。葬，即埋葬，爱，即爱情，翻译成外语就bury love
+	</div>
+	<div class = "a">
+		如果超过两行文字，就会换行
+		所以只能设置单行居中
+	</div>
+	<div class = "b">
+		<p>多行文字只能通过padding来设置垂直居中</p>
 	</div>
 </body>
 </html>
